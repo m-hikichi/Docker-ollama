@@ -1,0 +1,2 @@
+FROM ./multilingual-e5-large.gguf
+TEMPLATE {{ .Prompt }}

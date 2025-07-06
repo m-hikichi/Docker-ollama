@@ -2,7 +2,7 @@ version: '3'
 
 services:
   ollama:
-    image: ollama/ollama:0.6.7
+    image: ollama/ollama:0.9.3
     container_name: ollama
     volumes:
       - ../models:/workspace/models

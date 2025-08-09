@@ -2,10 +2,11 @@ version: '3'
 
 services:
   ollama:
-    image: ollama/ollama:0.9.3
+    image: ollama/ollama:0.11.4
     container_name: ollama
     volumes:
-      - ../models:/workspace/models
+      - ../huggingface_models:/workspace/huggingface_models
+      - ../ollama_models:/workspace/ollama_models
     working_dir: /workspace
     tty: true
     ports:
